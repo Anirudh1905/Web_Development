@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION FORM</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="reg_css.css">
+    <body bgcolor=lightblue>
+	<div id='reg_form'>
+        <h1><center>Registration Form</center></h1>
+		<form action="" method="">
+            <table align="center">
+                <tr>
+                    <td><label for="firstname">First Name:  </label></td>
+                    <td><input type="text" name="firstname" placeholder="Enter your firstname" required><br></td>
+                </tr>
+                <tr>
+                	<td><label for="lastname">Last Name:</label></td>
+                	<td><input type="text" name="lastname" placeholder="Enter your lastname" required><br></td>
+                </tr>
+                <div>
+                	<tr>
+                		<td><label for="gender">Gender:</label></td>		
+                		<td><label for="gender_ch">Male</label><input type="radio" name="gender_ch" value="ch1"><label for="gender_ch">  Female</label><input type="radio" name="gender_ch" value="ch1"><br></td>
+					</tr>
+				</div>
+				<div>
+					<tr>
+						<td><label for="email">Email:</label></td>
+						<td><input type="email" name="email" placeholder="Enter your email"><br></td>
+					</tr>
+					<tr>
+						<td><label for="passwd">Password:</label></td>
+						<td><input type="password" name="passwd"><br></td>
+					</tr>
+					<tr>
+						<td><label for="hobby">Hobbies</label></td>
+						<td><label for="cric">Cricket</label><input type="checkbox" name="cric" value="sh1"><label for="foot">  Football</label><input type="checkbox" name="foot" value="sh2"><label for="tenis">  Tennis</label><input type="checkbox" name="tenis" value="sh3"> </td>
+					</tr>
+				</div>
+				<div>
+					<tr>
+						<td><label for="month">Birthday</label></td>
+						<td><input id="date" type="text"></td>
+						<script>
+							$("#date").datepicker();
+						</script>
+					</tr>
+				</div>
+				<script>
+					$(document).ready(function(){
+						$("button:first").click(function(){
+							alert("Form Submitted");
+						})
+					})
+				</script>
+				<tr>
+					<td><button type="submit">Submit</button></td>
+					<td><button type="reset">Reset</button></td>
+				</tr>	
+        	</table>
+		</form>
+	</div>
+</body>
+</html>

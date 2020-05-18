@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How to add jQuery IntelliSense to a Visual Studio Code JavaScript file</title>
+        <!--script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="JQ.css">
+    </head>
+    <body>
+        <h1>I AM ANIRUDH SRIDHAR</h1>
+        <script>
+           let design= 
+           {
+               color: "blue",
+               background: "green",
+           }
+       </script>
+       <ul>
+           <li>Mango</li>
+           <li>Apple</li>
+           <li>Orange</li>
+       </ul>
+       <img id="asd" src="img2.jpg">
+       <script>
+           $(function()
+            {
+                $("#four").droppable();
+                $("#five").draggable();
+            });
+           $(document).ready(function()
+           {
+               $("#st").click(function()
+               {
+                   alert("Value: "+ $("#t").val());
+               })
+               $("#ab").click(function()
+               {
+                    $("#asd").addClass("style");
+               })
+               $("#cd").click(function()
+               {
+                    $("#asd").removeClass("style");
+               })
+               $("#ef").click(function()
+               {
+                    $("#asd").toggleClass("style");
+               })
+               $("#asd").click(function()
+               {
+                   $(this).hide();
+               })
+               $("input").on("keypress",function()
+               {
+                   $("ul").hide();
+               })
+               $("#gh").click(function()
+               {
+                   $("#one").fadeToggle();
+                   $("#two").fadeToggle("slow");
+                   $("#three").fadeToggle(3000);
+               })
+               $("#ij").click(function()
+               {
+                   $("#one").slideToggle();
+               })
+           });
+       </script>
+       <div>
+           <div id="one" style="width: 2200; height: 60px; display: none; background-color: orange;"></div><br>
+           <div id="two" style="width: 2200; height: 60px; display: none; background-color:lightblue;"></div><br>
+           <div id="three" style="width: 2200; height: 60px; display: none; background-color: green;"></div><br>
+           <div id="four" style="width: 2200; height: 60px; background-color:violet;"></div><br>
+           <div id="five" style="width: 120px; height: 60px; background-color:red;"></div><br>
+       </div>
+       <input type="text" id="t" value="">
+       <button id="st">Submit</button><br>
+       <button id="ab">try_add_class</button><br> 
+       <button id="cd">remove_class</button><br>
+       <button id="ef">toggle_class</button><br>
+       <button id="gh">Namaste</button><br>
+       <button id="ij">SlideUP/Down</button><br>
+       <input id="date" type="text">
+       <script>
+           $("#date").datepicker();
+       </script>
+    </body>
+</html>

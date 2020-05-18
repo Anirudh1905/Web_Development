@@ -1,0 +1,13 @@
+p
+{
+    width: auto;
+    height: 40px;
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    text-align: center;
+    color: darkgreen;
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;    
+}

@@ -1,0 +1,34 @@
+<h1>App Component</h1>
+
+<app-server></app-server>
+
+<!--div class="app-server"></div-->
+<h2>Data and Event Binding</h2>
+<h3>Input server Info</h3>
+<input type="text" placeholder="Server Name" [(ngModel)]="Servername"><br>
+<input type="number" placeholder="Server Id" [(ngModel)]="ServerId">
+<h3>Display server Info</h3>
+<p>Server name : {{Servername}}</p><!--string interpolation-->
+<p>Server ID : {{ServerId}}</p>
+<p>Server Status : {{ServerStatus}}</p>
+<button [disabled]="buttonstate" (click)="toggleServerStatus()">Toggle Server status</button><!--propertybinding-->
+<button [disabled]="resetcheck()" (click)="resetstatus()">Reset</button>
+
+<h2 [ngStyle]="{'color':getcolor()}">Directives</h2>
+<h3 [ngClass]="{'white': flag}">Ngif</h3>
+<p *ngIf="flag; else elseblock">Flag is True</p>
+<ng-template #elseblock>
+    <p id="false">Flag is False</p>
+</ng-template>
+<button (click)="toggleFlag()">Toggle Flag</button>
+
+<h2>Ng for</h2>
+<input type="text" placeholder="name" [(ngModel)]="Currentname">
+<button (click)="add()">Submit</button>
+
+<li *ngFor="let names of Students">{{names}}</li><br><br>
+
+<button [ngStyle]="{'background-color':putcolor()}" (click)="togile()">Toggle-{{c}}</button>
+<p *ngIf="flag1">Assignment-3 is a series of assignment which i think is very much boring to do i must have to do it everyday why me  why me why o why o why not me yea</p>
+
+

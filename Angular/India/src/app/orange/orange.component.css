@@ -1,0 +1,13 @@
+p
+{
+    width: auto;
+    height: 60px;
+    background-color: orange;
+    border: 2px solid red;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 50px;
+    padding-right: 50px;
+}

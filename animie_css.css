@@ -1,0 +1,21 @@
+
+@keyframes animie
+{
+    0%{background-color: red;left: 0;top: 0;}
+    25%{background-color: blue;left: 300px;top: 0;}
+    50%{background-color: yellow;left: 300px;top: 300px;}
+    75%{background-color: green;left: 0;top: 300px;}
+    100%{background-color: red;left: 0;top: 0;}
+}
+div {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 5px solid black;
+    position: relative;
+    animation-name: animie;
+    animation-delay: 2s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}

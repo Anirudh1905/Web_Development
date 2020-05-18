@@ -1,0 +1,15 @@
+
+#reg_form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 500px;
+    border: 20px solid;
+    background-color: beige;
+    border-color: saddlebrown;
+}
+tr,td
+{
+	padding: 10px;
+}
+

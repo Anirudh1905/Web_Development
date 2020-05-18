@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form(BOOT)</title>
+	<!--bootstrapcssframework-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--bootstrapjquery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--icons/poppers-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+	<!--bootstrapjsframework-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<form class="container">
+		<h1>Registration Form</h1>
+		<div class="form-group row">
+			<label for="fname" class="col-sm-2 col-form-label">First Name:</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="" placeholder="enter first name">	
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="lname" class="col-sm-2 col-form-label">Last Name:</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="" placeholder="enter last name">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="gender" class="col-sm-2 col-form-label">Gender</label>
+			<div class="custom-control custom-radio custom-control-inline">
+				<div class="custom-control custom-radio custom-control-inline">
+  					<input type="radio" id="c1" name="cl1" class="custom-control-input">
+  					<label class="custom-control-label" for="c1">Male</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+  					<input type="radio" id="c2" name="cl1" class="custom-control-input">
+  					<label class="custom-control-label" for="c2">Female</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="E-mail" class="col-sm-2 col-form-label">Email</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="" placeholder="example@xyz.com">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="passwd" class="col-sm-2 col-form-label">Password</label>
+			<div class="col-sm-10">
+				<input type="password" class="form-control" name="passwd">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label for="hobbie" class="col-sm-2 col-form-label">Hobbies</label>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="checkbox" id="i1" value="option1">
+  				<label class="form-check-label" for="inlineCheckbox1">Cricket</label>
+			</div>
+			<div class="form-check form-check-inline">
+  				<label class="form-check-label" for="inlineCheckbox2">Hockey</label>
+  				<input class="form-check-input" type="checkbox" id="i2" value="option2">
+			</div>
+		</div>
+	</form>
+</body>
+</html>
